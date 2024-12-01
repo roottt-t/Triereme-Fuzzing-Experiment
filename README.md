@@ -1,4 +1,4 @@
-It is a replication experiment setup instruction of the Triereme Fuzzing Tool. 
+This is a replication experiment setup instruction of the Triereme Fuzzing Tool. 
 
 [Reference Triereme Fuzzing Benchmark](https://github.com/vusec/fuzzbench-triereme)
 
