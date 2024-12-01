@@ -51,6 +51,12 @@ To clean the past experiment data, we can run
 docker system prune -af
 docker volume prune -a
 ```
+## Make the folder
+```
+mkdir experiment-data
+mkdir report-data
+```
+
 ## Run Experiment
 To run the experiment, under the folder Triereme-Fuzzing, run the following commands
 ```
@@ -68,12 +74,15 @@ PYTHONPATH=. python3 experiment/run_experiment.py \
   --benchmarks ${benchmark_list[@]}
   --allow_uncommitted_changes true  
 ```
+
 ## Extract the results
 To extract the result of the experiment, run the following commands
 ```
+# AFL++, Symcc Fuzzers
 python3 triereme/fuzzbench/extract_symcc_libafl_stats.py \
   ${experiment_filestore} ${experiment_name} ${output_dir}
 
+# Trim linear, Trim single Fuzzers
 python3 triereme/fuzzbench/extract_trace_stats.py \
   ${experiment_filestore} ${experiment_name} ${output_dir}
 ```
