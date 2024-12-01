@@ -56,7 +56,10 @@ docker volume prune -a
 mkdir experiment-data
 mkdir report-data
 ```
-
+## Set Benchmark
+```
+benchmark_list=("woff2_convert_woff2ttf_fuzzer")
+```
 ## Run Experiment
 To run the experiment, under the folder Triereme-Fuzzing, run the following commands
 ```
