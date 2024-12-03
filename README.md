@@ -75,7 +75,6 @@ PYTHONPATH=. python3 experiment/run_experiment.py \
       triereme_linear_single \
       triereme_trie_single \
   --benchmarks ${benchmark_list[@]}
-  --allow_uncommitted_changes true  
 ```
 
 ## Extract the results
